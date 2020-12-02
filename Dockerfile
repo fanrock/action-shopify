@@ -1,5 +1,5 @@
 # start with official python/alpine base
-FROM python:2.7.15-alpine3.7
+FROM python:3.9.0-alpine3.12
 
 RUN apk --no-cache add curl
 RUN curl -s https://shopify.github.io/themekit/scripts/install.py | python
