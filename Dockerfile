@@ -1,8 +1,5 @@
-FROM debian:stable-slim
-
-RUN apt-get update && \
-    apt-get install -y curl python && \
-    rm -rf /var/lib/apt/lists/*
+# start with official python/alpine base
+FROM python:2.7.15-alpine3.7
 
 RUN curl -s https://shopify.github.io/themekit/scripts/install.py | python
 
